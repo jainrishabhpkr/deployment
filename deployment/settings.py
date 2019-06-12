@@ -26,7 +26,7 @@ SECRET_KEY = 'l6=w+*l5@@y36ip6%4(zte+i@3tykd30j#uo*ge&gy&ioi8c52'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [demo-deployment12345.herokuapp.com]
+ALLOWED_HOSTS = ['jainrishabhpkr.herokuapp.com']
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
